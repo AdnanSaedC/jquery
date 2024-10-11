@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $('document').ready(()=>{
+            $("li:even").css("border","1px solid blue")
+            $("*").css("border","1px solid blue")
+            $("li:first-child").css("border","1px solid red")
+            $("li:last").css("border","1px solid yellow")
+            $("li:eq(3)").css("border","1px solid red")
+            $("li:gt(1)").css("border","1px solid white")
+            $("li:lt(3)").css("border","1px solid white")
+        })
+    </script>
+    <style>
+        body{
+            background-color: #212121;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <li>hello everyone</li>
+    <li>hello everyone</li>
+    <li>hello everyone</li>
+    <li>hello everyone</li>
+    <li>hello everyone</li>
+</body>
+</html>

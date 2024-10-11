@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+            /* display: flex;
+            justify-content: center; */
+        }
+        div{
+            height: 400px;
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: rgb(8, 53, 30);
+            /* margin: 10px; */
+            position: relative;
+            top: 20px;
+        }
+        #hi{
+            top: -10px;
+        }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <h1>sddddd</h1>
+    <div id="hi">
+
+        <div id="box">
+            <h2>ssss</h2>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fuga maiores, eius sapiente iusto exercitationem error dolorum dolore laboriosam minus vero laborum dolores quidem doloremque rem laudantium tempore voluptatem vitae.</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            //position
+            //gives the exact location of div(excludes border and margin)
+            //depends on his parent
+            $("h1").html($("#box").position().top)
+            console.log($("#box").position());
+            
+
+            //offset
+            //give about content(excludes border margibn and padding)
+            //it gives data from document
+            console.log($("#box").offset());
+
+            //setting offset
+            $("#box").offset({
+                top:100,left:10
+            })
+        })
+    </script>
+</body>
+</html>

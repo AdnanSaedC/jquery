@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;}
+            div{
+                height: 100px;
+                width: 100px;
+                background-color: rgb(89, 88, 88);
+            }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit.</p>
+        <h2></h2>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            $("div").animate({
+                marginLeft:"10px",
+                width:"hide",
+                borderRadius:"25px",
+                height : "+=10px"
+            },1000,()=>{
+                $("h2").html("property ")
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+        }
+        #blue{
+            color: aquamarine;
+            font-size: xx-large;
+        }
+        span{
+            color: blueviolet;
+        }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+        <p>adnan saed</p>
+        <h2>dfjdfj</h2>
+        <h2>hhfhdfhfhh</h2>
+        <script>
+            $(document).ready(()=>{
+                $("h2").wrap('<div id="blue"></div>')
+                $("p").wrap('<div id="blue"></div>')
+                $("p").unwrap()
+                $("h2").wrapAll("<div id=top></div>")
+                //blue->top->h2
+                $("p").wrapInner("<span></sapn>")
+
+
+            })
+        </script>
+</body>
+</html>

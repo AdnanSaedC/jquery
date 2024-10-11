@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;}
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit.</p>
+    <h2>Lorem ipsum dolor sit.ddddf</h2>
+    <script>
+        $(document).ready(()=>{
+            $("p").slideUp(1000,()=>{
+                $("h2").html("slide Up")
+            })
+            $("p").slideDown(1000,()=>{
+                $("h2").html("slide down")
+            })
+            $("p").slideToggle(3000,()=>{
+                $("h2").html("slide down hhha")
+            })
+        })
+    </script>
+</body>
+</html>

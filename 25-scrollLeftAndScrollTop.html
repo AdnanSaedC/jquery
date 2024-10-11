@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+            /* display: flex;
+            justify-content: center; */
+        }
+        p{
+            width: 800px;
+            
+            overflow:auto;
+            /* overflow-x: auto; */
+            /* white-space:nowrap; */
+        }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, delectus illo consequatur sed rem voluptate. Molestias laudantium asperiores necessitatibus debitis ea, obcaecati laborum modi nemo iusto magni nobis omnis cum!
+        Magni maxime dolores rem ab vitae libero sit animi veniam, dignissimos facilis saepe temporibus quo rerum eos, corporis nulla omnis cupiditate quis? Voluptatum eos ea, totam soluta quod recusandae dolores.
+        Voluptatum sit autem iusto, magni, quos libero non ipsam perferendis ut facilis sed cumque corrupti quibusdam officiis doloribus blanditiis ab nesciunt labore? Minima omnis sunt tempora vitae modi iusto eum.
+        Perspiciatis, ex molestiae distinctio dignissimos facere, explicabo, magnam repellendus vitae totam in itaque neque fugit eos nihil! Nulla eaque dolorem totam iste, voluptatem sit, at ipsa soluta assumenda maxime animi.
+        Incidunt, modi! Repellendus odio fugiat temporibus hic aut iste reiciendis pariatur id in fugit aspernatur incidunt laudantium, dolorem aperiam officia! Officiis ab inventore saepe maxime totam culpa. Atque, beatae cupiditate!
+        Beatae provident nesciunt id quaerat error, quam corrupti consequuntur eligendi nihil quidem ipsa distinctio aut. Nesciunt sequi quis cumque corrupti fugit, molestiae aliquid, itaque, numquam illo facilis ipsum repellendus temporibus!
+        Nisi beatae veniam dolor voluptatibus labore nostrum incidunt minima, neque reprehenderit molestias, unde aspernatur deleniti possimus et placeat debitis pariatur sit, consectetur quibusdam! Aperiam rem neque sunt excepturi cum tempora?
+        Voluptatibus perspiciatis, exercitationem, neque pariatur nobis quas cumque nemo dolore quos eveniet blanditiis, nam eos praesentium sapiente numquam. Molestiae doloribus perferendis doloremque quaerat exercitationem nihil corporis consectetur mollitia illo cum.
+        Sit illum blanditiis cumque sed quod autem magni corporis, explicabo ullam commodi cum accusantium, quaerat nulla molestias repellat quam atque praesentium qui, distinctio provident ab. Numquam libero placeat ducimus exercitationem.
+        At, ipsum eos veritatis sint itaque tempora non vitae minima exercitationem magnam magni dignissimos quos dolores aliquam laboriosam error, quasi, dolorem numquam ea ab rem a nostrum praesentium. Aspernatur, suscipit.
+    </p>
+    <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem accusamus numquam, sequi, quod sint debitis nobis officiis eligendi aliquam iste eveniet magnam dolore illo iusto necessitatibus omnis delectus, consectetur est!</h2>
+    <button id="me">go to ther top</button>
+    <script>
+        $(document).ready(()=>{
+            $(window).scroll(()=>{
+
+                console.log($(window).scrollTop())
+                console.log($(window).scrollLeft())
+            })
+            $("#me").click(()=>{
+                $(window).scrollTop(0);
+            })
+            })
+    </script>
+</body>
+</html>

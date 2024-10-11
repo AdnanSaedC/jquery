@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+            }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <p id="test">i dont have a child</p>
+    <p>ddd <span>hello</span></p>
+    <p> <b id="test">i am a child</b> </p>
+    <h2></h2>
+    <script>
+        $(document).ready(()=>{
+            $("p").has("b").css("color","white")
+            $("p").has("b,span").css("color","aqua")
+            $("p").has("#test").css("background-color","black")
+            //look the changes are reflected only in child
+            
+            
+            $("h2").html($("p").is("#test"))
+
+        })
+    </script>
+</body>
+</html>

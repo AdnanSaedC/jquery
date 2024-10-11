@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            background-color: blue;
+
+        }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, expedita.</p>
+    <script>
+        $(document).ready(()=>{
+            $("p").addClass("red blue")
+            $("p").removeClass("red blue")
+            $("p").toggleClass("red blue")
+        })
+    </script>
+</body>
+</html>

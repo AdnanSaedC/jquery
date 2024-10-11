@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;}
+            ul,body{
+                position: relative;
+            }
+            /* div{
+                height: 100px;
+                width: 100px;
+                background-color: rgb(89, 88, 88);
+            } */
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <div>
+        <ul>
+            <p>jsdjjjdjddjdjdjdjk</p>
+            <li id="id">
+                <li id="mlm nai">
+
+                    <p>hhdhdhdhdjh</p>
+                    <span>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    </span>
+                </li>
+            </li>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            //ancestor method
+            console.log($("p").parent())
+            console.log($("p").parents())
+            console.log($("p").parents("#id").css("color","red"))
+            console.log($("p").parentsUntil("div").css("background-color","blue"))
+            console.log($("p").offsetParent());
+            //you will get till the parent who position
+            //is considered by child here ul which is first
+            console.log($("p").closest("li"));
+            
+
+            
+            //you will get all till html
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+            }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <p>used to check whether you have right clicked
+        left clicked and rotated the wheel in the center
+    </p>
+    <button>click me</button>
+    <h2></h2>
+    <script>
+
+        $(document).ready(()=>{
+            $("button").on("click",(event)=>{
+                let x=event.which
+
+                let y=$("h2")
+                console.log(x);
+                
+                if(x==1){
+                    y.html("right clicked")
+                }
+            })
+        })
+    </script>
+</body>
+</html>

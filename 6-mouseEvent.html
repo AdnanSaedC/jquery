@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <style>
+        body{
+            background-color: #212121;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <h1>click me</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <script>
+        $("documnet").ready(()=>{
+            $("#box1").click(()=>{
+                let a=$("h1");
+                a.css("color","red")
+            })
+            $("#box1").dblclick(()=>{
+                let a=$("h1");
+                a.css("color","blue")
+            })
+            $("#box1").contextmenu(()=>{
+                let a=$("h1");
+                a.css("color","yellow")
+            })
+            $("#box1").mouseenter(()=>{
+                let a=$("h1");
+                a.css("color","tan")
+            })
+            $("#box1").mouseleave(()=>{
+                let a=$("h1");
+                a.css("color","#000000")
+            })
+        })
+    </script>
+</body>
+</html>

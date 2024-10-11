@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: grey;
+            background-color: #212121;
+        }
+        .bg{
+            background-color: aquamarine;
+        }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>mouse</li>
+        <li>mouse</li>
+        <li>mouse</li>
+        <li>mouse</li>
+        <li>mouse</li>
+    </ul>
+    <script>
+        $(document).ready(()=>{
+            //in general both are same
+            $("li,ul").after("<li>saed</li>")
+            $("ul").before("<li>sssssssaed</li>")
+        })
+    </script>
+</body>
+</html>

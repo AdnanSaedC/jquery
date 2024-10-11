@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,a{
+            color: grey;
+            background-color: #212121;
+            
+            }
+    </style>
+    <script src="./jquery-3.7.1.min.js">
+    </script>
+</head>
+<body>
+    <a id="preventing" href="https://www.google.com">google</a>
+    <br>
+    <a  href="https://www.bing.com" >bing</a>
+    <h2>
+
+    </h2>
+    <script>
+        $(document).ready(()=>{
+            $("#preventing").click((event)=>{
+                event.preventDefault();
+
+                //lets check whether the anchor tag has a 
+                //prevent default or not
+                //which is true
+                $("h2").html(event.isDefaultPrevented())
+            })
+        })
+    </script>
+</body>
+</html>
